@@ -1,0 +1,16 @@
+{
+  "name": "zenn",
+  "build": { "dockerfile": "Dockerfile" },
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "zenn.zenn-preview",
+        "yzhang.markdown-all-in-one",
+        "DavidAnson.vscode-markdownlint",
+        "TakumiI.markdowntable"
+      ]
+    }
+  },
+  "postCreateCommand": "yarn install"
+}

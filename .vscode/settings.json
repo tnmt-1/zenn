@@ -1,0 +1,29 @@
+{
+    // General
+    "files.autoSave": "off",
+    "editor.stickyScroll.enabled": false,
+
+    // Markdown
+    "markdown.preview.breaks": true,
+
+    // Markdown All in One
+    "markdown.extension.toc.orderedList": true,
+    "markdown.extension.toc.levels": "1..1",
+    "markdown.extension.toc.plaintext": true,
+    "markdown.extension.list.indentationSize": "inherit",
+
+    // Markdown Table
+    "markdowntable.formatOnSave": true,
+
+    // Ext specific settings
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.tabSize": 4,
+        "editor.formatOnSave": true,
+        "editor.quickSuggestions": {
+            "comments": true,
+            "strings": true,
+            "other": true
+        }
+    }
+}
