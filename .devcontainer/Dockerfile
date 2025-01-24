@@ -2,7 +2,7 @@ FROM library/node:lts-bookworm-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt update \
-    && apt install -y --no-install-recommends sudo git \
+    && apt install -y --no-install-recommends sudo git openssh-client \
     && apt autoremove -y \
     && rm -rf /var/lib/apt/lists/* \
     && echo "node ALL=(ALL) NOPASSWD: ALL" >/etc/sudoers.d/node \
@@ -10,5 +10,5 @@ RUN apt update \
 
 COPY .ssh /home/node/.ssh
 RUN chown -R node:node /home/node/.ssh \
-    && chmod 0600 /home/node/.ssh/ed25519 \
-    && chmod 0644 /home/node/.ssh/ed25519.pub
+    && chmod 0600 /home/node/.ssh/id_ed25519 \
+    && chmod 0644 /home/node/.ssh/id_ed25519.pub
