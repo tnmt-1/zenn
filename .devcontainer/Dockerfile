@@ -12,3 +12,5 @@ COPY .ssh /home/node/.ssh
 RUN chown -R node:node /home/node/.ssh \
     && chmod 0600 /home/node/.ssh/id_ed25519 \
     && chmod 0644 /home/node/.ssh/id_ed25519.pub
+
+RUN yarn set version berry
