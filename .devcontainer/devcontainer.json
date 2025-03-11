@@ -8,7 +8,8 @@
         "zenn.zenn-preview",
         "yzhang.markdown-all-in-one",
         "DavidAnson.vscode-markdownlint",
-        "TakumiI.markdowntable"
+        "TakumiI.markdowntable",
+        "EditorConfig.EditorConfig"
       ]
     }
   },
